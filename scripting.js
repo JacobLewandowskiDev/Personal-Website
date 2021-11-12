@@ -401,7 +401,7 @@ if (page == "projects.html") {
         if(slideIndex == 1) {
             document.getElementById('project-name').innerHTML = 'Church Of Iron';
             document.getElementById('project-description').innerHTML = 'A fully developed gym web app that allows users to log in and create their own workout routine to track their progress by adding exercises from the default list or adding their own exercises to it. Each list is then saved and stored for each individual user for future use. The user can also copy their previous workout to avoid typing it out each time. The entire backend for this web app was written in <span class="orangeText">Java</span>. For data storage, I\'ve decided to use a relational database - <span class="orangeText">MySQL</span>. For the front-end, I\'ve used <span class="orangeText">HTML, CSS, JavaScript</span>';
-            changeLink('view-code', null); // Change view code link
+            changeLink('view-code', 'https://github.com/JacobLewandowskiDev/Church-Of-Iron/tree/main'); // Change view code link
             changeLink('live-version', null); // Change live version link
         }
         
