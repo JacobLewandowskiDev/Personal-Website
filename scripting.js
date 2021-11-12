@@ -432,6 +432,7 @@ if (page == "projects.html") {
             changeLink('live-version', null); // Change live version link
         }
     };
+    
 
     // Change project links
     const linkContainer = document.getElementById('project-view-buttons');
