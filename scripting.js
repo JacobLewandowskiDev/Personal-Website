@@ -29,7 +29,7 @@ document.getElementById('menu').onclick = function() {
 // Contact form open/close - Start
 let contactClicked = false;
 
-if(page == "index.html" || page == "projects.html") {
+if(page != "about.html") {
     document.getElementById('contact-navigation-button').onclick=function() {
         if(contactClicked == false) {
             contactClicked = true;
@@ -167,8 +167,10 @@ animate();
 
 
  
-// Phone number contact information button
+// About me page logic
 if (page == "about.html") {
+
+    // Phone number information button
     let clickedPhone = false;
 
     document.getElementById("button-1").onclick = function () {
@@ -242,10 +244,10 @@ if (page == "about.html") {
 
         alert("Copied: " + copyText);
     };
-}
 
-// Open skill information box when programming language logo is clicked
-if (page == "about.html") {
+
+
+    // Open skill information box when programming language logo is clicked
     function openSkillInfo(skillName) {
         if(skillName == 'java') {
             document.getElementById('skill-description').style.display = "flex";
