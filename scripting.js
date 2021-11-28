@@ -284,6 +284,12 @@ if (page == "about.html") {
             document.getElementById('skill-name').innerHTML = "Git";
             document.getElementById('coding-skill-description').innerHTML = " - Git has become a primary application that I use in order to control the versions of my personal projects. I learned the basics of it fairly quickly and easily. If you want to check out my repositories visit my <a class='p-link' target='_blank' href='https://github.com/JacobLewandowskiDev'>Github.</a>"
         }
+
+        else if(skillName == 'maven') {
+            document.getElementById('skill-description').style.display = "flex";
+            document.getElementById('skill-name').innerHTML = "Maven";
+            document.getElementById('coding-skill-description').innerHTML = " - I use Maven in all of my more complex Java projects in order to track their dependancies, build, and documentation in order to make life easier for the people interested in running my source code."
+        }
     
         // Close skill information box when clicked anywhere in its field
         document.getElementById('skill-description').onclick = function() {
