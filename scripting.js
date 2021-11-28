@@ -301,6 +301,7 @@ if (page == "about.html") {
     };
 };
 
+
 // Project slides for project page
 if (page == "projects.html") {   
 
