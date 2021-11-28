@@ -289,6 +289,7 @@ if (page == "about.html") {
             document.getElementById('skill-description').style.display = "flex";
             document.getElementById('skill-name').innerHTML = "Maven";
             document.getElementById('coding-skill-description').innerHTML = " - I use Maven in all of my more complex Java projects in order to track their dependancies, build, and documentation in order to make life easier for the people interested in running my source code."
+            console.log('Maven description active');
         }
     
         // Close skill information box when clicked anywhere in its field
