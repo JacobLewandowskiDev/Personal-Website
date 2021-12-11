@@ -264,7 +264,7 @@ if (page == "about.html") {
         else if(skillName == 'css') {
             document.getElementById('skill-description').style.display = "flex";
             document.getElementById('skill-name').innerHTML = "CSS";
-            document.getElementById('coding-skill-description').innerHTML = " - This is one of my favorite languages to work with. I am a very visual and creative person, because of this I have so much fun working with CSS to design the front end for my projects"
+            document.getElementById('coding-skill-description').innerHTML = " - This is one of my favorite languages to work with. I am a very visual and creative person, because of this I really enjoy working with CSS to design the front end for my projects"
         }
     
         else if(skillName == 'javascript') {
@@ -276,19 +276,19 @@ if (page == "about.html") {
         else if(skillName == 'sql') {
             document.getElementById('skill-description').style.display = "flex";
             document.getElementById('skill-name').innerHTML = "SQL";
-            document.getElementById('coding-skill-description').innerHTML = " - When a project I work on needs to contain lots of data that is related to one another in some way, I'd use a relational database like MySQL. The language itself was fairly easy to learn and use while playing around with it."
+            document.getElementById('coding-skill-description').innerHTML = " - When a project I work on needs to contain lots of data that is related to one another in some way, I'd use SQL to build my database up. Depending on what I actually need I will use SQLite or MySQL. The language itself was fairly easy to learn and use while playing around with it."
         }
     
         else if(skillName == 'git') {
             document.getElementById('skill-description').style.display = "flex";
             document.getElementById('skill-name').innerHTML = "Git";
-            document.getElementById('coding-skill-description').innerHTML = " - Git has become a primary application that I use in order to control the versions of my personal projects. I learned the basics of it fairly quickly and easily. If you want to check out my repositories visit my <a class='p-link' target='_blank' href='https://github.com/JacobLewandowskiDev'>Github.</a>"
+            document.getElementById('coding-skill-description').innerHTML = " - Git has become a primary tool that I use in order to control the versions of my work. I learned it fairly quickly and easily. If you want to check out my repositories visit my <a class='p-link' target='_blank' href='https://github.com/JacobLewandowskiDev'>Github.</a>"
         }
 
         else if(skillName == 'maven') {
             document.getElementById('skill-description').style.display = "flex";
             document.getElementById('skill-name').innerHTML = "Maven";
-            document.getElementById('coding-skill-description').innerHTML = " - I use Maven in all of my more complex Java projects in order to track their dependancies, build, and documentation in order to make life easier for the people interested in running my source code."
+            document.getElementById('coding-skill-description').innerHTML = " - I've learned how to use Maven after the problem of my project growing number of dependencies, plugins, and configurations became overwhelming to keep track of. Now I use Maven in all of my Java projects to track their dependencies, build, and more to make life easier for the users interested in running my source code"
             console.log('Maven description active');
         }
     
