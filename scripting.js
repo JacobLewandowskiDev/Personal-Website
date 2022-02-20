@@ -282,13 +282,13 @@ if (page == "about.html") {
         else if(skillName == 'git') {
             document.getElementById('skill-description').style.display = "flex";
             document.getElementById('skill-name').innerHTML = "Git";
-            document.getElementById('coding-skill-description').innerHTML = " - Git has become a primary tool that I use in version control of my work. It is a very straightforward tool to learn and use right away. Check out my code repositories on <a class='p-link' target='_blank' href='https://github.com/JacobLewandowskiDev'>Github.</a>"
+            document.getElementById('coding-skill-description').innerHTML = " - Git has become a primary tool that I use for version control of my work. It was a very straightforward tool to learn and use right away. Check out my code repositories on <a class='p-link' target='_blank' href='https://github.com/JacobLewandowskiDev'>Github.</a>"
         }
 
         else if(skillName == 'maven') {
             document.getElementById('skill-description').style.display = "flex";
             document.getElementById('skill-name').innerHTML = "Maven";
-            document.getElementById('coding-skill-description').innerHTML = " - Keeping track of a project's dependencies, plugins, and configurations can be a real hassle and overwhelm a programmer very quickly. This is where Maven comes to the rescue, which rids us of this problem by holding all of our project dependencies in one place. Once I've learned how to use Maven I started implementing it in all of my Java projects."
+            document.getElementById('coding-skill-description').innerHTML = " - Keeping track of a project's dependencies, plugins, and configurations can be a real hassle that can overwhelm a programmer very quickly. This is where Maven comes to the rescue, which rids us of this problem by holding all of our project dependencies in one place. Once I've learned how to use Maven I started implementing it in all of my Java projects."
             console.log('Maven description active');
         }
 
@@ -296,7 +296,7 @@ if (page == "about.html") {
             document.getElementById('skill-description').style.display = "flex";
             document.getElementById('skill-name').innerHTML = "Googling";
             document.getElementById('coding-skill-description').innerHTML = " - It might sound funny to you that I listed this as a skill, but hear me out. If I were to name one ability that would be extremely helpful for every programmer no matter what language he uses, I would have to say it's googling/searching for stuff the right way. Knowing what to look for and the way you format your questions/syntax in the web browser can save you tons of time when looking for a solution to your coding problems."
-            console.log('Maven description active');
+            console.log('Googling description active');
         }
     
         // Close skill information box when clicked anywhere in its field
