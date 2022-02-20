@@ -252,43 +252,50 @@ if (page == "about.html") {
         if(skillName == 'java') {
             document.getElementById('skill-description').style.display = "flex";
             document.getElementById('skill-name').innerHTML = "Java";
-            document.getElementById('coding-skill-description').innerHTML = " - This was the first programming language that I began to learn back in 2020. After spending a few months with it I really started to enjoy writing code in it. The whole idea and principles of OOP quickly grew on me and I have been implementing it in most of my projects.";
+            document.getElementById('coding-skill-description').innerHTML = " - This was the first programming language in which I made my baby steps towards becoming a programmer back in the middle of 2020. After spending a few months learning it in my free time I really started to enjoy writing code in it. Even though I was a total beginner when I started learning it I never got discouraged by any problem I was facing, because of the amount of fun I was having while figuring stuff out. That is why Java has become the primary backend language in my projects.";
         }
     
         else if(skillName == 'html') {
             document.getElementById('skill-description').style.display = "flex";
             document.getElementById('skill-name').innerHTML = "HTML";
-            document.getElementById('coding-skill-description').innerHTML = " - This was the first-front end language I had learned. I really enjoy the process of creating websites from scratch with HTML and then designing them with CSS. I do not mind using ready code snippets, but during the learning process, I always try to make it by myself as much as I can.";
+            document.getElementById('coding-skill-description').innerHTML = " - I really enjoy the process of creating websites from scratch with HTML and then designing them with CSS. I don't mind using ready code snippets, however, I always try to do something by myself when I'm in the learning process.";
         }
     
         else if(skillName == 'css') {
             document.getElementById('skill-description').style.display = "flex";
             document.getElementById('skill-name').innerHTML = "CSS";
-            document.getElementById('coding-skill-description').innerHTML = " - This is one of my favorite languages to work with. I am a very visual and creative person, because of this I really enjoy working with CSS to design the front end for my projects"
+            document.getElementById('coding-skill-description').innerHTML = " - This is one of my favorite languages to work with. I am a very visual and creative person, and because of this I really enjoy working in CSS to design the look of my projects."
         }
     
         else if(skillName == 'javascript') {
             document.getElementById('skill-description').style.display = "flex";
             document.getElementById('skill-name').innerHTML = "JavaScript";
-            document.getElementById('coding-skill-description').innerHTML = " - Because javascript can be run on any device and web browser nowadays without any special program makes it one of the most versatile languages in my skill set. When learning new languages I always try to apply my previously acquired knowledge and principles in order to learn it quicker."
+            document.getElementById('coding-skill-description').innerHTML = " - Because JavaScript can be run on any device and web browser nowadays without any special program makes it one of the most versatile languages in my skill set. While I was just starting to learn it I quickly noticed the similarities in principles and the way code is written in it, which made the entire process of learning much easier for me."
         }
     
         else if(skillName == 'sql') {
             document.getElementById('skill-description').style.display = "flex";
             document.getElementById('skill-name').innerHTML = "SQL";
-            document.getElementById('coding-skill-description').innerHTML = " - When a project I work on needs to contain lots of data that is related to one another in some way, I'd use SQL to build my database up. Depending on what I actually need I will use SQLite or MySQL. The language itself was fairly easy to learn and use while playing around with it."
+            document.getElementById('coding-skill-description').innerHTML = " - Whenever a project I work on requires a way to contain lots of data that is in some way related to one another, I'd typically go for a SQL database like SQLite or MySQL to create a container for all that data. I find the basics of the SQL language to be fairly easy to learn and use."
         }
     
         else if(skillName == 'git') {
             document.getElementById('skill-description').style.display = "flex";
             document.getElementById('skill-name').innerHTML = "Git";
-            document.getElementById('coding-skill-description').innerHTML = " - Git has become a primary tool that I use in order to control the versions of my work. I learned it fairly quickly and easily. If you want to check out my repositories visit my <a class='p-link' target='_blank' href='https://github.com/JacobLewandowskiDev'>Github.</a>"
+            document.getElementById('coding-skill-description').innerHTML = " - Git has become a primary tool that I use in version control of my work. It is a very straightforward tool to learn and use right away. Check out my code repositories on <a class='p-link' target='_blank' href='https://github.com/JacobLewandowskiDev'>Github.</a>"
         }
 
         else if(skillName == 'maven') {
             document.getElementById('skill-description').style.display = "flex";
             document.getElementById('skill-name').innerHTML = "Maven";
-            document.getElementById('coding-skill-description').innerHTML = " - I've learned how to use Maven after the problem of my project growing number of dependencies, plugins, and configurations became overwhelming to keep track of. Now I use Maven in all of my Java projects to track their dependencies, build, and more to make life easier for the users interested in running my source code"
+            document.getElementById('coding-skill-description').innerHTML = " - Keeping track of a project's dependencies, plugins, and configurations can be a real hassle and overwhelm a programmer very quickly. This is where Maven comes to the rescue, which rids us of this problem by holding all of our project dependencies in one place. Once I've learned how to use Maven I started implementing it in all of my Java projects."
+            console.log('Maven description active');
+        }
+
+        else if(skillName == 'googling') {
+            document.getElementById('skill-description').style.display = "flex";
+            document.getElementById('skill-name').innerHTML = "Googling";
+            document.getElementById('coding-skill-description').innerHTML = " - It might sound funny to you that I listed this as a skill, but hear me out. If I were to name one ability that would be extremely helpful for every programmer no matter what language he uses, I would have to say it's googling/searching for stuff the right way. Knowing what to look for and the way you format your questions/syntax in the web browser can save you tons of time when looking for a solution to your coding problems."
             console.log('Maven description active');
         }
     
@@ -418,7 +425,7 @@ if (page == "projects.html") {
         // If selected project's index is equal to 2 then change name and description to Project 2's
         else if(slideIndex == 2) {
             document.getElementById('project-name').innerHTML = 'Hvac Calculator';
-            document.getElementById('project-description').innerHTML = 'As an environmental engineer, I figured I\'d create an online calculator that helps with the tedious portion of creating an HVAC project. This particular app allows its users to calculate the pipe/air duct diameters and sizes in 4 different specializations (Heating, Ventilation, Water supply, and gas supply). I have built this app from nothing only with the use of: <span class="orangeText">HTML, CSS</span>, and <span class="orangeText">JavaScript</span>.';
+            document.getElementById('project-description').innerHTML = 'As an environmental engineering graduate, I figured I\'d create an online calculator that helps with the tedious portion of creating an HVAC/MEP project. This particular app allows its users to calculate the pipe/air duct diameters and sizes in 4 different specializations (Heating, Ventilation, Water supply, and gas supply). I have built this app from nothing only with the following tech stack: <span class="orangeText">HTML, CSS</span>, and <span class="orangeText">JavaScript</span>.';
         
             changeLink('view-code', 'https://github.com/JacobLewandowskiDev/HVAC-Calculator'); // Change view code link
             changeLink('live-version', 'HVAC_calculator/calculator-main.html'); // Change live version link
