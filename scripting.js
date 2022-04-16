@@ -252,37 +252,43 @@ if (page == "about.html") {
         if(skillName == 'java') {
             document.getElementById('skill-description').style.display = "flex";
             document.getElementById('skill-name').innerHTML = "Java";
-            document.getElementById('coding-skill-description').innerHTML = " - This was the first programming language in which I made my baby steps towards becoming a programmer back in the middle of 2020. After spending a few months learning it in my free time I really started to enjoy writing code in it. Even though I was a total beginner when I started learning it I never got discouraged by any problem I was facing, because of the amount of fun I was having while figuring stuff out. That is why Java has become the primary backend language in my projects.";
+            document.getElementById('coding-skill-description').innerHTML = " - This was the first programming language in which I made my baby steps towards becoming a programmer back in the middle of 2020. After spending a few months learning it in my free time I really started to enjoy writing code in it. Even though I was totally new to programming when I started I never got discouraged by any problem I was facing, because of the amount of fun I was having while figuring stuff out. That is why Java has become the primary backend language in my projects.";
+            console.log('Java description active');
         }
     
         else if(skillName == 'html') {
             document.getElementById('skill-description').style.display = "flex";
             document.getElementById('skill-name').innerHTML = "HTML";
             document.getElementById('coding-skill-description').innerHTML = " - I really enjoy the process of creating websites from scratch with HTML and then designing them with CSS. I don't mind using ready code snippets, however, I always try to do something by myself when I'm in the learning process.";
+            console.log('HTML description active');
         }
     
         else if(skillName == 'css') {
             document.getElementById('skill-description').style.display = "flex";
             document.getElementById('skill-name').innerHTML = "CSS";
-            document.getElementById('coding-skill-description').innerHTML = " - This is one of my favorite languages to work with. I am a very visual and creative person, and because of this I really enjoy working in CSS to design the look of my projects."
+            document.getElementById('coding-skill-description').innerHTML = " - I love working with CSS. I believe myself to be a very visual and creative person. Because of this I really enjoy the process of designing the look of my projects."
+            console.log('CSS description active');
         }
     
         else if(skillName == 'javascript') {
             document.getElementById('skill-description').style.display = "flex";
             document.getElementById('skill-name').innerHTML = "JavaScript";
             document.getElementById('coding-skill-description').innerHTML = " - Because JavaScript can be run on any device and web browser nowadays without any special program makes it one of the most versatile languages in my skill set. While I was just starting to learn it I quickly noticed the similarities in principles and the way code is written in it, which made the entire process of learning much easier for me."
+            console.log('JavaScript description active');
         }
     
         else if(skillName == 'sql') {
             document.getElementById('skill-description').style.display = "flex";
             document.getElementById('skill-name').innerHTML = "SQL";
             document.getElementById('coding-skill-description').innerHTML = " - Whenever a project I work on requires a way to contain lots of data that is in some way related to one another, I'd typically go for a SQL database like SQLite or MySQL to create a container for all that data. I find the basics of the SQL language to be fairly easy to learn and use."
+            console.log('SQL description active');
         }
     
         else if(skillName == 'git') {
             document.getElementById('skill-description').style.display = "flex";
             document.getElementById('skill-name').innerHTML = "Git";
             document.getElementById('coding-skill-description').innerHTML = " - Git has become a primary tool that I use for version control of my work. It was a very straightforward tool to learn and use right away. Check out my code repositories on <a class='p-link' target='_blank' href='https://github.com/JacobLewandowskiDev'>Github.</a>"
+            console.log('Git description active');
         }
 
         else if(skillName == 'maven') {
@@ -295,8 +301,15 @@ if (page == "about.html") {
         else if(skillName == 'googling') {
             document.getElementById('skill-description').style.display = "flex";
             document.getElementById('skill-name').innerHTML = "Googling";
-            document.getElementById('coding-skill-description').innerHTML = " - It might sound funny to you that I listed this as a skill, but hear me out. If I were to name one ability that would be extremely helpful for every programmer no matter what language he uses, I would have to say it's googling/searching for stuff the right way. Knowing what to look for and the way you format your questions/syntax in the web browser can save you tons of time when looking for a solution to your coding problems."
+            document.getElementById('coding-skill-description').innerHTML = " - It might sound silly to you that I listed this as a skill, but hear me out. If I were to name one ability that is extremely helpful to all programmers no matter the skill level or what language he uses, I would have to say it's googling/searching for stuff the right way. Knowing what to look for and the way you format your questions/syntax in the web browser can save you tons of time when looking for a solution to your coding problem."
             console.log('Googling description active');
+        }
+
+        else if(skillName == 'spring') {
+            document.getElementById('skill-description').style.display = "flex";
+            document.getElementById('skill-name').innerHTML = "Spring";
+            document.getElementById('coding-skill-description').innerHTML = " - I really like to work with the Spring framework. The fact that it manages all of the dependencies for me, and allows the implementation of complex features (like user authentication, REST API control etc.) without having to write paragraphs of code saves me a lot of time and allows me to focus more on the logic behind my apps."
+            console.log('Spring description active');
         }
     
         // Close skill information box when clicked anywhere in its field
@@ -487,7 +500,7 @@ if (page == "projects.html") {
             console.log(tag);
         }
 
-        // If new link is null then just remove the unneeded tag
+        // If new link is null then just remove the unnecessary tag
         else {
             console.log('Tag removed');
         }
