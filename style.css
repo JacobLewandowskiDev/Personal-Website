@@ -472,7 +472,7 @@ nav ul li ul.sub-menu li:hover  {
         position: relative;
         flex-direction: column;
         width: 60vw;
-        min-width: 270px;
+        min-width: 260px;
         height: 80vh;
         top: 90px;
         margin: 0 auto;

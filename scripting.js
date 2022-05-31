@@ -1,4 +1,3 @@
-
 let path = window.location.pathname;
 let page = path.split("/").pop();
 
@@ -196,7 +195,6 @@ if (page == "about.html") {
         document.getElementById("email").style.animation = "1.4s contact-info-slide ease forwards, 3s contact-info-text-opacity forwards ease";
         document.getElementById("email-text").style.animation = "3s contact-info-text-opacity forwards ease"
         let email = document.getElementById("email-text").innerHTML;
-        console.log(email);
 
         if (clickedEmail == true) {
             myFunction(email);
@@ -334,34 +332,34 @@ if (page == "projects.html") {
 
         if(slideIndex == 0) {
             slideIndex = 4;
-            document.getElementById('clicked-project').src = 'images/gwent.jpg';
-            document.getElementById('selected-project-caption').innerHTML = "Gwent: The card game";
-        }
-
-        if(slideIndex == 1) {
-            document.getElementById('clicked-project').src = 'images/gym.jpg';
+            document.getElementById('clicked-project').src = 'images/gym-select.jpg';
             document.getElementById('selected-project-caption').innerHTML = "Church Of Iron";
         }
 
+        if(slideIndex == 1) {
+            document.getElementById('clicked-project').src = 'images/denarius-select.jpg';
+            document.getElementById('selected-project-caption').innerHTML = "Denarius";
+        }
+
         if(slideIndex == 2) {
-            document.getElementById('clicked-project').src = 'images/calculator.jpg';
-            document.getElementById('selected-project-caption').innerHTML = "HVAC Calculator";
+            document.getElementById('clicked-project').src = 'images/chat-room-select.jpg';
+            document.getElementById('selected-project-caption').innerHTML = "Chat Room";
         }
 
         if(slideIndex == 3) {
-            document.getElementById('clicked-project').src = 'images/burger.jpg';
-            document.getElementById('selected-project-caption').innerHTML = "Burger Builder";
+            document.getElementById('clicked-project').src = 'images/calculator-select.jpg';
+            document.getElementById('selected-project-caption').innerHTML = "HVAC Calculator";
         }
 
         if(slideIndex == 4) {
-            document.getElementById('clicked-project').src = 'images/gwent.jpg';
-            document.getElementById('selected-project-caption').innerHTML = "Gwent: The card game";
+            document.getElementById('clicked-project').src = 'images/gym-select.jpg';
+            document.getElementById('selected-project-caption').innerHTML = "Church Of Iron";
         }
 
         if(slideIndex > 4) {
             slideIndex = 1;
-            document.getElementById('clicked-project').src = 'images/gym.jpg';
-            document.getElementById('selected-project-caption').innerHTML = "Church Of Iron";
+            document.getElementById('clicked-project').src = 'images/denarius-select.jpg';
+            document.getElementById('selected-project-caption').innerHTML = "Denarius";
         }
 
         console.log(slideIndex);
@@ -370,29 +368,29 @@ if (page == "projects.html") {
 
     // Switch selected project when project thumbnail is clicked
     document.getElementById('project-1').addEventListener('click', function() {
-        document.getElementById('clicked-project').src = 'images/gym.jpg';
-        document.getElementById('selected-project-caption').innerHTML = "Church Of Iron";
+        document.getElementById('clicked-project').src = 'images/denarius-select.jpg';
+        document.getElementById('selected-project-caption').innerHTML = "Denarius";
         slideIndex = 1;
         console.log('It worked 1');
     });
 
     document.getElementById('project-2').addEventListener('click', function() {
-        document.getElementById('clicked-project').src = 'images/calculator.jpg';
-        document.getElementById('selected-project-caption').innerHTML = "HVAC Calculator";
+        document.getElementById('clicked-project').src = 'images/chat-room-select.jpg';
+        document.getElementById('selected-project-caption').innerHTML = "Chat Room";
         slideIndex = 2;
         console.log('It worked 2');
     });
 
     document.getElementById('project-3').addEventListener('click', function() {
-        document.getElementById('clicked-project').src = 'images/burger.jpg';
-        document.getElementById('selected-project-caption').innerHTML = "Burger Builder";
+        document.getElementById('clicked-project').src = 'images/calculator-select.jpg';
+        document.getElementById('selected-project-caption').innerHTML = "HVAC Calculator";
         slideIndex = 3;
         console.log('It worked 3');
     });
 
     document.getElementById('project-4').addEventListener('click', function() {
-        document.getElementById('clicked-project').src = 'images/gwent.jpg';
-        document.getElementById('selected-project-caption').innerHTML = "Gwent: The card game"; 
+        document.getElementById('clicked-project').src = 'images/gym-select.jpg';
+        document.getElementById('selected-project-caption').innerHTML = "Church Of Iron"; 
         slideIndex = 4;
         console.log('It worked 4');
     });
@@ -429,36 +427,66 @@ if (page == "projects.html") {
     function changeInfo() {
         // If selected project's index is equal to 1 then change name and description to Project 1's
         if(slideIndex == 1) {
-            document.getElementById('project-name').innerHTML = 'Church Of Iron';
-            document.getElementById('project-description').innerHTML = 'A fully developed gym web app that allows users to log in and create their own workout routine to track their progress by adding exercises from the default list or adding their own exercises to it. Each list is then saved and stored for each individual user for future use. The user can also copy their previous workout to avoid typing it out each time. The entire backend for this web app was written in <span class="orangeText">Java</span>. For data storage, I\'ve decided to use a relational database - <span class="orangeText">MySQL</span>. For the front-end, I\'ve used <span class="orangeText">HTML, CSS, JavaScript</span>';
-            changeLink('view-code', 'https://github.com/JacobLewandowskiDev/Church-Of-Iron/tree/main'); // Change view code link
+            document.getElementById('project-name').innerHTML = 'Denarius - Finance Manager';
+
+            document.getElementById('project-description').innerHTML = 'Denarius - The name of my application originates from a silver coin used in ancient Rome as a form of payment.<br> '
+            + '<br>This web app assists its users in managing their finances. The client side of the app after loging in can setup saving goals they wish to achieve by a certain date '
+            + 'and track their expenses. The backend then takes care of storing that data and performing all of the calculations upon a specific endpoint request call. '
+            + 'That data is then presented to the user for their viewing. The webapp can also tracks the information of the top 20 trading Cryptocurrencies and updates the list every ' 
+            + '2 minutes by pulling the data from coinmarketcap.com using the CoinMarketCap API.<br>'
+            + '<br> Tech stack used for the project:'
+            + '<br>- Back-end: <span class="orangeText">Java 11</span>'
+            + '<br>- Data storage: <span class="orangeText">MySQL</span>'
+            + '<br>- Front-end: <span class="orangeText">HTML, CSS, JavaScript</span>'
+            + '<br>- Dependency management:: <span class="orangeText">Maven 3.8.3</span>'
+            + '<br>- Java Frameworks: <span class="orangeText">Spring ver 2.6.3</span>'
+            + '<br>- CryptoCurrency info: <span class="orangeText">CoinMarketCap API</span>';
+
+            changeLink('view-code', 'https://github.com/JacobLewandowskiDev/Denarius-Finance-Manager'); // Change view code link
             changeLink('live-version', null); // Change live version link
         }
         
         // If selected project's index is equal to 2 then change name and description to Project 2's
         else if(slideIndex == 2) {
+            document.getElementById('project-name').innerHTML = 'Chat Room';
+
+            document.getElementById('project-description').innerHTML = 'Chat Room - As the name implies it is a chat room that works based on websockets. Once a user has typed in a username '
+            + 'that they will be using in the webapp they can send messages in the global chat room for all of the connected users to see.<br> '
+            + '<br> Tech stack used for the project:'
+            + '<br>- Back-end: <span class="orangeText">Java 11</span>'
+            + '<br>- Front-end: <span class="orangeText">HTML, CSS, JavaScript</span>'
+            + '<br>- Dependency management:: <span class="orangeText">Maven 3.8.3</span>'
+            + '<br>- Java Frameworks: <span class="orangeText">Spring ver 2.6.3</span>';
+        
+            changeLink('view-code', 'https://github.com/JacobLewandowskiDev/Chat-Room'); // Change view code link
+            changeLink('live-version', null); // Change live version link
+        }
+
+        // If selected project's index is equal to 3 then change name and description to Project 3's
+        else if(slideIndex == 3) {
             document.getElementById('project-name').innerHTML = 'Hvac Calculator';
-            document.getElementById('project-description').innerHTML = 'As an environmental engineering graduate, I figured I\'d create an online calculator that helps with the tedious portion of creating an HVAC/MEP project. This particular app allows its users to calculate the pipe/air duct diameters and sizes in 4 different specializations (Heating, Ventilation, Water supply, and gas supply). I have built this app from nothing only with the following tech stack: <span class="orangeText">HTML, CSS</span>, and <span class="orangeText">JavaScript</span>.';
+            document.getElementById('project-description').innerHTML = 'As an environmental engineering graduate, I figured I\'d create an online calculator that '
+            + 'helps with the tedious portion of creating an HVAC/MEP project. This particular app allows its users to calculate the pipe/air duct diameters and ' 
+            + 'sizes in 4 different specializations (Heating, Ventilation, Water supply, and gas supply). I have built this app from nothing only with the following '
+            + 'tech stack: <span class="orangeText">HTML, CSS</span>, and <span class="orangeText">JavaScript</span>.';
+  
         
             changeLink('view-code', 'https://github.com/JacobLewandowskiDev/HVAC-Calculator'); // Change view code link
             changeLink('live-version', 'HVAC_calculator/calculator-main.html'); // Change live version link
         }
 
-        // If selected project's index is equal to 3 then change name and description to Project 3's
-        else if(slideIndex == 3) {
-            document.getElementById('project-name').innerHTML = 'Burger Builder';
-            document.getElementById('project-description').innerHTML = 'A <span class="orangeText">Java</span> backend for a burger building web app similar to the one McDonalds uses. It allows users to add their own ingredients to form the \"perfect\" burger, but if you are of the lazier type you can also order some of the ready meals to enjoy.';
-        
-            changeLink('view-code', 'https://github.com/JacobLewandowskiDev/BurgerBuilder'); // Change view code link
-            changeLink('live-version', null); // Remove live version link
-        }
-
         // If selected project's index is equal to 4 then change name and description to Project 4's
         else if(slideIndex == 4) {
-            document.getElementById('project-name').innerHTML = 'Gwent: The Witcher Card Game';
-            document.getElementById('project-description').innerHTML = 'A work in progress replica of the Witcher 3\'s card game: Gwent. I\'ve really enjoyed playing this mini-game but felt sad that there wasn\'t an app with this version of it anywhere. That is why I\'ve decided to make it by myself. The game will contain all of the playable decks from the original Witcher 3 game and also have a simple AI that allows the player to play against it.';
-        
-            changeLink('view-code', null); // Change view code link
+            document.getElementById('project-name').innerHTML = 'Church Of Iron';
+            document.getElementById('project-description').innerHTML = 'This project as of now is a work in progress to become a fully functional gym web app that allows users to log into their account '
+            + 'and create their own workout routines to track their progress. They can save exercises from the default list to their routine or add their own exercises to it. Each list will then be '
+            + 'saved and stored for each individual user for future use. The user will also be able to copy their previous workouts with the previous reps and sets to avoid typing it out each time.'
+            + '<br> Tech stack used for the project:'
+            + '<br>- Back-end: <span class="orangeText">Java 11</span>'
+            + '<br>- Unit testing: <span class="orangeText">Junit 5</span>'
+            + '<br>- Dependency management: <span class="orangeText">Maven 3.8.3</span>';
+
+            changeLink('view-code', 'https://github.com/JacobLewandowskiDev/Church-Of-Iron/tree/main'); // Change view code link
             changeLink('live-version', null); // Change live version link
         }
     };
