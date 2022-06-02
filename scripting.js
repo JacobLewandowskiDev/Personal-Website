@@ -430,9 +430,9 @@ if (page == "projects.html") {
             document.getElementById('project-name').innerHTML = 'Denarius - Finance Manager';
 
             document.getElementById('project-description').innerHTML = 'Denarius - The name of my application originates from a silver coin used in ancient Rome as a form of payment.<br> '
-            + '<br>This web app assists its users in managing their finances. The client side of the app after loging in can setup saving goals they wish to achieve by a certain date '
+            + '<br>This web app assists its users in managing their finances. The client-side of the app after logging in can set up saving goals they wish to achieve by a certain date '
             + 'and track their expenses. The backend then takes care of storing that data and performing all of the calculations upon a specific endpoint request call. '
-            + 'That data is then presented to the user for their viewing. The webapp can also tracks the information of the top 20 trading Cryptocurrencies and updates the list every ' 
+            + 'That data is then presented to the user for their viewing. The web app can also track the information of the top 20 trading Cryptocurrencies and updates the list every ' 
             + '2 minutes by pulling the data from coinmarketcap.com using the CoinMarketCap API.<br>'
             + '<br> Tech stack used for the project:'
             + '<br>- Back-end: <span class="orangeText">Java 11</span>'
