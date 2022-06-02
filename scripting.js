@@ -450,8 +450,8 @@ if (page == "projects.html") {
         else if(slideIndex == 2) {
             document.getElementById('project-name').innerHTML = 'Chat Room';
 
-            document.getElementById('project-description').innerHTML = 'Chat Room - As the name implies it is a chat room that works based on websockets. Once a user has typed in a username '
-            + 'that they will be using in the webapp they can send messages in the global chat room for all of the connected users to see.<br> '
+            document.getElementById('project-description').innerHTML = 'Chat Room - As the name implies it is a chat room that works based on WebSockets. Once a user has typed in a username '
+            + 'that they will be using in the web app they can send messages in the global chat room for all of the connected users to see.<br> '
             + '<br> Tech stack used for the project:'
             + '<br>- Back-end: <span class="orangeText">Java 11</span>'
             + '<br>- Front-end: <span class="orangeText">HTML, CSS, JavaScript</span>'
@@ -478,7 +478,7 @@ if (page == "projects.html") {
         // If selected project's index is equal to 4 then change name and description to Project 4's
         else if(slideIndex == 4) {
             document.getElementById('project-name').innerHTML = 'Church Of Iron';
-            document.getElementById('project-description').innerHTML = 'This project as of now is a work in progress to become a fully functional gym web app that allows users to log into their account '
+            document.getElementById('project-description').innerHTML = 'This project as of now is a work in progress to become a fully functional gym web app that allows users to log in to their accounts '
             + 'and create their own workout routines to track their progress. They can save exercises from the default list to their routine or add their own exercises to it. Each list will then be '
             + 'saved and stored for each individual user for future use. The user will also be able to copy their previous workouts with the previous reps and sets to avoid typing it out each time.'
             + '<br> Tech stack used for the project:'
