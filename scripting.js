@@ -438,7 +438,7 @@ if (page == "projects.html") {
             + '<br>- Back-end: <span class="orangeText">Java 11</span>'
             + '<br>- Data storage: <span class="orangeText">MySQL</span>'
             + '<br>- Front-end: <span class="orangeText">HTML, CSS, JavaScript</span>'
-            + '<br>- Dependency management:: <span class="orangeText">Maven 3.8.3</span>'
+            + '<br>- Dependency management: <span class="orangeText">Maven 3.8.3</span>'
             + '<br>- Java Frameworks: <span class="orangeText">Spring ver 2.6.3</span>'
             + '<br>- CryptoCurrency info: <span class="orangeText">CoinMarketCap API</span>';
 
@@ -455,7 +455,7 @@ if (page == "projects.html") {
             + '<br> Tech stack used for the project:'
             + '<br>- Back-end: <span class="orangeText">Java 11</span>'
             + '<br>- Front-end: <span class="orangeText">HTML, CSS, JavaScript</span>'
-            + '<br>- Dependency management:: <span class="orangeText">Maven 3.8.3</span>'
+            + '<br>- Dependency management: <span class="orangeText">Maven 3.8.3</span>'
             + '<br>- Java Frameworks: <span class="orangeText">Spring ver 2.6.3</span>';
         
             changeLink('view-code', 'https://github.com/JacobLewandowskiDev/Chat-Room'); // Change view code link
