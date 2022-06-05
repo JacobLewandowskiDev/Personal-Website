@@ -29,6 +29,7 @@ document.getElementById('menu').onclick = function() {
 let contactClicked = false;
 
 if(page != "about.html") {
+
     document.getElementById('contact-navigation-button').onclick=function() {
         if(contactClicked == false) {
             contactClicked = true;
@@ -169,73 +170,39 @@ animate();
 // About me page logic
 if (page == "about.html") {
 
-    // Phone number information button
-    let clickedPhone = false;
+    // Start animations for contact section when scrolled passed a certain % od the viewport
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateButtons()
+                return; 
+                }
+        }); 
+    }, {threshold: .6});  // --> 60% of the contact section viewport must be scrolled passed to start the animations 
+    
+    observer.observe(document.querySelector('.contact-section')); // --> Observe the info section viewport
 
-    document.getElementById("button-1").onclick = function () {
+    // Contact button anmations
+    function animateButtons() {
         document.getElementById("button-1").style.animation = "6s contact-box-shine infinite, 1.5s contact-icon-slide forwards ease";
         document.getElementById("phone").style.animation = "1.4s contact-info-slide ease forwards, 3s contact-info-text-opacity forwards ease";
         document.getElementById("phone-text").style.animation = "3s contact-info-text-opacity forwards ease"
 
-        let phone = "(929)-402-9246";
-        console.log(phone);
-
-        if (clickedPhone == true) {
-            myFunction(phone);
-        } else {
-            clickedPhone = true;
-        }
-    };
-    
-    // Email contact information button
-    let clickedEmail = false;
-
-        document.getElementById("button-2").onclick = function () {
         document.getElementById("button-2").style.animation = "6s contact-box-shine infinite, 1.5s contact-icon-slide forwards ease";
         document.getElementById("email").style.animation = "1.4s contact-info-slide ease forwards, 3s contact-info-text-opacity forwards ease";
         document.getElementById("email-text").style.animation = "3s contact-info-text-opacity forwards ease"
-        let email = document.getElementById("email-text").innerHTML;
 
-        if (clickedEmail == true) {
-            myFunction(email);
-        } else {
-            clickedEmail = true;
-        }
-    };
-
-    // LinkedIn contact information button
-    let clickedLinkedIn = false;
-
-    document.getElementById("button-3").onclick = function () {
         document.getElementById("button-3").style.animation = "6s contact-box-shine infinite, 1.5s contact-icon-slide forwards ease";
         document.getElementById("linkedIn").style.animation = "1.4s contact-info-slide ease forwards";
         document.getElementById("linkedIn-text").style.animation = " 3s contact-info-text-opacity forwards ease";
 
-
-        if (clickedLinkedIn == true) {
-            window.open("https://linkedin.com/in/jakub-lewandowski-011001");
-        } else {
-            clickedLinkedIn = true;
-        }
-    };
-
-    // GitHub contact information button
-    let clickedGitHub = false;
-
-    document.getElementById("button-4").onclick = function () {
         document.getElementById("button-4").style.animation = "6s contact-box-shine infinite, 1.5s contact-icon-slide forwards ease";
         document.getElementById("gitHub").style.animation = "1.4s contact-info-slide ease forwards, 3s contact-info-text-opacity forwards ease";
         document.getElementById("gitHub-text").style.animation = "3s contact-info-text-opacity forwards ease"
-
-        if (clickedGitHub == true) {
-            window.open("https://github.com/JacobLewandowskiDev");
-        } else {
-            clickedGitHub = true;
-        }
-    };
+    }
 
     // Copy text inside of tag
-    function myFunction(text) {
+    function copyTextFromButton(text) {
         let copyText = text;    /* Get the text field */
 
         navigator.clipboard.writeText(copyText);
@@ -243,7 +210,29 @@ if (page == "about.html") {
         alert("Copied: " + copyText);
     };
 
+    // Copy phone number if clicked
+    document.getElementById("button-1").onclick = function () {
+        let phone = "(929)-402-9246";
+        copyTextFromButton(phone);
+    };
+    
+    // Copy email if clicked
+    document.getElementById("button-2").onclick = function () {
+        let email = document.getElementById("email-text").innerHTML;
+        copyTextFromButton(email);
+    };
 
+    // Open LinkedIn if clicked
+    document.getElementById("button-3").onclick = function () {
+        window.open("https://linkedin.com/in/jakub-lewandowski-011001");
+    };
+
+    // Open GitHub if clicked
+    document.getElementById("button-4").onclick = function () {
+        window.open("https://github.com/JacobLewandowskiDev");
+    };
+
+   
 
     // Open skill information box when programming language logo is clicked
     function openSkillInfo(skillName) {
