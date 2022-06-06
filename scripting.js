@@ -432,7 +432,7 @@ if (page == "projects.html") {
             + '<br>- CryptoCurrency info: <span class="orangeText">CoinMarketCap API</span>';
 
             changeLink('view-code', 'https://github.com/JacobLewandowskiDev/Denarius-Finance-Manager'); // Change view code link
-            changeLink('live-version', null); // Change live version link
+            changeLink('live-version', 'https://denarius-financial-manager.herokuapp.com'); // Change live version link
         }
         
         // If selected project's index is equal to 2 then change name and description to Project 2's
@@ -448,7 +448,7 @@ if (page == "projects.html") {
             + '<br>- Java Frameworks: <span class="orangeText">Spring ver 2.6.3</span>';
         
             changeLink('view-code', 'https://github.com/JacobLewandowskiDev/Chat-Room'); // Change view code link
-            changeLink('live-version', null); // Change live version link
+            changeLink('live-version', 'https://chat-room-jl.herokuapp.com'); // Change live version link
         }
 
         // If selected project's index is equal to 3 then change name and description to Project 3's
