@@ -260,7 +260,7 @@ if (page == "about.html") {
         else if(skillName == 'javascript') {
             document.getElementById('skill-description').style.display = "flex";
             document.getElementById('skill-name').innerHTML = "JavaScript";
-            document.getElementById('coding-skill-description').innerHTML = " - Because JavaScript can be run on any device and web browser nowadays without any special program makes it one of the most versatile languages in my skill set. While I was just starting to learn it I quickly noticed the similarities in principles and the way code is written in it, which made the entire process of learning much easier for me."
+            document.getElementById('coding-skill-description').innerHTML = " - Because JavaScript can be run on any device and web browser nowadays without any special program makes it, probably makes it my favorite programming language, and one of the most versatile ones in my skill set. While I was just starting to learn it I quickly noticed the similarities in principles and the way code is written in it, which made the entire process of learning much easier for me."
             console.log('JavaScript description active');
         }
     
@@ -292,11 +292,11 @@ if (page == "about.html") {
             console.log('Googling description active');
         }
 
-        else if(skillName == 'spring') {
+        else if(skillName == 'spring-boot') {
             document.getElementById('skill-description').style.display = "flex";
-            document.getElementById('skill-name').innerHTML = "Spring";
-            document.getElementById('coding-skill-description').innerHTML = " - I really like to work with the Spring framework. The fact that it manages all of the dependencies for me, and allows the implementation of complex features (like user authentication, REST API control etc.) without having to write paragraphs of code saves me a lot of time and allows me to focus more on the logic behind my apps."
-            console.log('Spring description active');
+            document.getElementById('skill-name').innerHTML = "Spring Boot";
+            document.getElementById('coding-skill-description').innerHTML = " - I enjoy working with this framework. The fact that it makes building web apps so much easier for me, and allows the implementation of complex features (like user authentication, REST API control, etc.) without having to write paragraphs of code saves me a lot of time and allows me to focus more on the logic behind my applications."
+            console.log('Spring Boot description active');
         }
     
         // Close skill information box when clicked anywhere in its field
