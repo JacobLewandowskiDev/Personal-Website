@@ -80,7 +80,7 @@ class Partcile {
     draw() {
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, false);
-        ctx.fillStyle = 'rgba(255, 187, 12, 0.47)';
+        ctx.fillStyle = 'rgba(255, 141, 0, 0.5)';
         ctx.fill();
     };
 
@@ -113,7 +113,7 @@ function init() {
         let y = (Math.random() * ((innerHeight - size * 4) - (size * 4)) + size * 4);
         let directionX = (Math.random() * 5) - 2.5;
         let directionY = (Math.random() * 5) - 2.5;
-        let color = 'rgba(255, 187, 12, 0.47)';
+        let color = 'rgba(255, 141, 0, 0.5)';
 
         particlesArray.push(new Partcile(x, y, directionX, directionY, size, color));
     }
@@ -126,7 +126,7 @@ function connect() {
             let distance = ((particlesArray[a].x - particlesArray[b].x) * (particlesArray[a].x - particlesArray[b].x))
                 + ((particlesArray[a].y - particlesArray[b].y) * (particlesArray[a].y - particlesArray[b].y));
             if (distance < (canvas.width / 8) * (canvas.height / 8)) {
-                ctx.strokeStyle = 'rgba(255, 187, 12, 0.47)';
+                ctx.strokeStyle = 'rgba(255, 141, 0, 0.6)';
                 ctx.lineWidth = 1;
                 ctx.beginPath();
                 ctx.moveTo(particlesArray[a].x, particlesArray[a].y);

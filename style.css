@@ -89,7 +89,7 @@ nav {
     justify-content: center;
     z-index: 1000;
     top: 0;
-    background-color: rgba(255, 161, 38, 0.8);
+    background-color: rgba(255, 141, 0, 0.8);
     border-bottom: 2px rgba(253, 194, 0, 0.5) solid;
 }
 
@@ -156,7 +156,7 @@ nav ul li a:link, nav ul li a:visited, .contact-box a:link, .contact-box a:visit
 
 /* Background color and box shadow when hovering over links */
 nav ul li:hover {
-    background: rgba(255, 213, 77, 0.4);
+    background: rgba(236, 139, 20, 0.7);
 }
 
 /* Active links text color*/
@@ -184,12 +184,12 @@ nav ul li:hover ul.sub-menu {
 ul.sub-menu {
     display: block;
     position: absolute;
-    background: rgba(247, 165, 58, 0.7);
+    background: rgba(255, 141, 0, 0.7);
     width: fit-content;
     min-width: 183px;
     height: fit-content;
     top: -100vh;
-    border: rgb(242, 170, 76) solid 2px;
+    border: rgb(242, 170, 0.5) solid 2px;
     border-top: none;
 }
 
@@ -203,7 +203,7 @@ ul.sub-menu li a {
 
 /* Hover over sub menu list item */
 nav ul li ul.sub-menu li:hover  {
-    background: #ffb731e0;
+    background: rgba(255, 141, 0, 0.7);
     display: flex;
     padding: -1%;
     text-align: left;
