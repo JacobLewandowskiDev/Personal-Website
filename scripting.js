@@ -239,8 +239,8 @@ if (page == "about.html") {
         if(skillName == 'java') {
             document.getElementById('skill-description').style.display = "flex";
             document.getElementById('skill-name').innerHTML = "Java";
-            document.getElementById('coding-skill-description').innerHTML = " - This was the first programming language in which I made my baby steps towards becoming a programmer back "
-            + "in the middle of 2020. After spending a few months learning it in my free time I really started to enjoy writing code in it. Even though I was totally new to programming "
+            document.getElementById('coding-skill-description').innerHTML = " - This was the first programming language in which I made my baby steps towards becoming a programmer. "
+            + "After spending a few months learning it in my free time I really started to enjoy writing code in it. Even though I was totally new to programming "
             + "when I started I never got discouraged by any problem I was facing, because of the amount of fun I was having while figuring stuff out. That is why Java has become the "
             + "primary backend language in my projects.";
             console.log('Java description active');
