@@ -245,6 +245,27 @@ nav ul li ul.sub-menu li:hover  {
     margin: 130px auto 0 auto;
 }
 
+#about-me p {
+    line-height: 40px;
+}
+
+#quote-text, #quote-auth {
+    letter-spacing: 3px;
+    width: 95%;
+}
+
+#quote-text {
+    text-align: center;
+    font-family: 'Tulpen One', Courier, monospace;
+    font-size: calc(.5vw + 26px);
+    font-style: italic;
+}
+
+#quote-auth {
+    text-align: right;
+    font-weight: 100;
+}
+
  /* Programming skills div */
  #programming-skills-section {
     width: 50%;
@@ -280,7 +301,7 @@ nav ul li ul.sub-menu li:hover  {
     margin: 0 auto;
     text-indent: 10px;
     font-size: calc(16px + 1vw);
-    line-height: 40px;
+    line-height: 45px;
 }
 
 /* Programming skills - start */
@@ -313,8 +334,8 @@ nav ul li ul.sub-menu li:hover  {
     color:#e26600;
     text-decoration-color: #e26600;
     font-weight: bold;
-    text-underline-offset: .1vw;
-    text-decoration-thickness: 3px;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 2px;
 }
 
 /* Contact me section in About me page - Start */

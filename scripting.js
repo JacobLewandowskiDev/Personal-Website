@@ -240,9 +240,7 @@ if (page == "about.html") {
             document.getElementById('skill-description').style.display = "flex";
             document.getElementById('skill-name').innerHTML = "Java";
             document.getElementById('coding-skill-description').innerHTML = " - This was the first programming language in which I made my baby steps towards becoming a programmer. "
-            + "After spending a few months learning it in my free time I really started to enjoy writing code in it. Even though I was totally new to programming "
-            + "when I started I never got discouraged by any problem I was facing, because of the amount of fun I was having while figuring stuff out. That is why Java has become the "
-            + "primary backend language in my projects.";
+            + "After spending a few months learning it in my free time I really started to enjoy writing code in it.";
             console.log('Java description active');
         }
     
@@ -266,8 +264,7 @@ if (page == "about.html") {
             document.getElementById('skill-description').style.display = "flex";
             document.getElementById('skill-name').innerHTML = "JavaScript";
             document.getElementById('coding-skill-description').innerHTML = " - Because JavaScript can be run on any device and web browser nowadays without any special program makes it,"
-            + " probably makes it my favorite programming language, and one of the most versatile ones in my skill set. While I was just starting to learn it I quickly noticed the "
-            + "similarities in principles and the way code is written in it, which made the entire process of learning much easier for me."
+            + " probably makes it my favorite programming language."
             console.log('JavaScript description active');
         }
     
@@ -440,11 +437,11 @@ if (page == "projects.html") {
             + 'That data is then presented to the user for their viewing. The web app can also track the information of the top 20 trading Cryptocurrencies and updates the list every ' 
             + '2 minutes by pulling the data from coinmarketcap.com using the CoinMarketCap API.<br>'
             + '<br> Tech stack used for the project:'
-            + '<br>- Back-end: <span class="orangeText">Java 11</span>'
+            + '<br>- Back-end: <span class="orangeText">Java</span>'
             + '<br>- Data storage: <span class="orangeText">MySQL</span>'
             + '<br>- Front-end: <span class="orangeText">HTML, CSS, JavaScript</span>'
-            + '<br>- Dependency management: <span class="orangeText">Maven 3.8.3</span>'
-            + '<br>- Java Frameworks: <span class="orangeText">Spring ver 2.6.3</span>'
+            + '<br>- Dependency management: <span class="orangeText">Maven</span>'
+            + '<br>- Java Frameworks: <span class="orangeText">Spring</span>'
             + '<br>- CryptoCurrency info: <span class="orangeText">CoinMarketCap API</span>';
 
             changeLink('view-code', 'https://github.com/JacobLewandowskiDev/Denarius-Finance-Manager'); // Change view code link
@@ -455,13 +452,13 @@ if (page == "projects.html") {
         else if(slideIndex == 2) {
             document.getElementById('project-name').innerHTML = 'Chat Room';
 
-            document.getElementById('project-description').innerHTML = 'Chat Room - As the name implies it is a chat room that works based on WebSockets. Once a user has typed in a username '
+            document.getElementById('project-description').innerHTML = 'Chat Room - A chat room app based on WebSockets. Once a user has typed in a username '
             + 'that they will be using in the web app they can send messages in the global chat room for all of the connected users to see.<br> '
             + '<br> Tech stack used for the project:'
-            + '<br>- Back-end: <span class="orangeText">Java 11</span>'
+            + '<br>- Back-end: <span class="orangeText">Java</span>'
             + '<br>- Front-end: <span class="orangeText">HTML, CSS, JavaScript</span>'
-            + '<br>- Dependency management: <span class="orangeText">Maven 3.8.3</span>'
-            + '<br>- Java Frameworks: <span class="orangeText">Spring ver 2.6.3</span>';
+            + '<br>- Dependency management: <span class="orangeText">Maven</span>'
+            + '<br>- Java Frameworks: <span class="orangeText">Spring</span>';
         
             changeLink('view-code', 'https://github.com/JacobLewandowskiDev/Chat-Room'); // Change view code link
             changeLink('live-version', 'https://chat-room-jl.herokuapp.com'); // Change live version link
@@ -470,7 +467,7 @@ if (page == "projects.html") {
         // If selected project's index is equal to 3 then change name and description to Project 3's
         else if(slideIndex == 3) {
             document.getElementById('project-name').innerHTML = 'Hvac Calculator';
-            document.getElementById('project-description').innerHTML = 'As an environmental engineering graduate, I figured I\'d create an online calculator that '
+            document.getElementById('project-description').innerHTML = 'As an MEP & HVAC Engineer, I figured I\'d create an online calculator that '
             + 'helps with the tedious portion of creating an HVAC/MEP project. This particular app allows its users to calculate the pipe/air duct diameters and ' 
             + 'sizes in 4 different specializations (Heating, Ventilation, Water supply, and gas supply). I have built this app from nothing only with the following '
             + 'tech stack: <span class="orangeText">HTML, CSS</span>, and <span class="orangeText">JavaScript</span>.';
@@ -487,9 +484,9 @@ if (page == "projects.html") {
             + 'and create their own workout routines to track their progress. They can save exercises from the default list to their routine or add their own exercises to it. Each list will then be '
             + 'saved and stored for each individual user for future use. The user will also be able to copy their previous workouts with the previous reps and sets to avoid typing it out each time.'
             + '<br> Tech stack used for the project:'
-            + '<br>- Back-end: <span class="orangeText">Java 11</span>'
-            + '<br>- Unit testing: <span class="orangeText">Junit 5</span>'
-            + '<br>- Dependency management: <span class="orangeText">Maven 3.8.3</span>';
+            + '<br>- Back-end: <span class="orangeText">Java</span>'
+            + '<br>- Unit testing: <span class="orangeText">Junit</span>'
+            + '<br>- Dependency management: <span class="orangeText">Maven</span>';
 
             changeLink('view-code', 'https://github.com/JacobLewandowskiDev/Church-Of-Iron/tree/main'); // Change view code link
             changeLink('live-version', null); // Change live version link
