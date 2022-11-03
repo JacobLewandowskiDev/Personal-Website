@@ -2,25 +2,25 @@ let path = window.location.pathname;
 let page = path.split("/").pop();
 
 // Mobile menu - Start
-let mobileMenuClicked = false;
-let navigationPosition = document.getElementById('nav-links');
+// let mobileMenuClicked = false;
+// let navigationPosition = document.getElementById('nav-links');
 
-document.getElementById('menu').onclick = function() {
+// document.getElementById('menu').onclick = function() {
 
-    if(mobileMenuClicked == false) {
-        navigationPosition.style.top = '60px';
-        navigationPosition.style.animation = ' .5s mobileMenuSlideOpen forwards ease-in-out';
-        mobileMenuClicked = true;
-        console.log('opened mobile menu');
-    }
+//     if(mobileMenuClicked == false) {
+//         navigationPosition.style.top = '60px';
+//         navigationPosition.style.animation = ' .5s mobileMenuSlideOpen forwards ease-in-out';
+//         mobileMenuClicked = true;
+//         console.log('opened mobile menu');
+//     }
 
-    else if(mobileMenuClicked == true) {
-        navigationPosition.style.top = '-100vh';
-        navigationPosition.style.animation = ' .5s mobileMenuSlideClose forwards ease-in-out';
-        mobileMenuClicked = false;
-        console.log('closed mobile menu');
-    }
-};
+//     else if(mobileMenuClicked == true) {
+//         navigationPosition.style.top = '-100vh';
+//         navigationPosition.style.animation = ' .5s mobileMenuSlideClose forwards ease-in-out';
+//         mobileMenuClicked = false;
+//         console.log('closed mobile menu');
+//     }
+// };
 // Mobile menu - End
 
 
@@ -29,13 +29,17 @@ document.getElementById('menu').onclick = function() {
 let contactClicked = false;
 
 if(page != "about.html") {
+    
+    const contactButtons = document.getElementsByClassName('contact-navigation-button');
 
-    document.getElementById('contact-navigation-button').onclick=function() {
-        if(contactClicked == false) {
-            contactClicked = true;
-            document.getElementById('clicked-contact').style.animation = '.5s contact-page-show forwards ease';
-        }
-    };
+    for (const contactClick of contactButtons) {
+        contactClick.addEventListener('click', function() {
+            if(contactClicked == false) {
+                contactClicked = true;
+                document.getElementById('clicked-contact').style.animation = '.5s contact-page-show forwards ease';
+            }
+        }); 
+    }
 
     document.addEventListener('keydown', function(event){
         if(event.key === "Escape" && contactClicked == true){
