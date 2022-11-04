@@ -2,27 +2,42 @@ let path = window.location.pathname;
 let page = path.split("/").pop();
 
 // Mobile menu - Start
-// let mobileMenuClicked = false;
-// let navigationPosition = document.getElementById('nav-links');
+let mobileMenuClicked = false;
+let menuPosition = document.getElementById('mobile-menu');
 
-// document.getElementById('menu').onclick = function() {
+document.getElementById('menu').onclick = function() {
 
-//     if(mobileMenuClicked == false) {
-//         navigationPosition.style.top = '60px';
-//         navigationPosition.style.animation = ' .5s mobileMenuSlideOpen forwards ease-in-out';
-//         mobileMenuClicked = true;
-//         console.log('opened mobile menu');
-//     }
+    if(mobileMenuClicked == false) {
+        menuPosition.style.left = '0%';
+        menuPosition.style.animation = '.5s mobileMenuSlideOpen forwards ease-in-out';
+        mobileMenuClicked = true;
+    }
 
-//     else if(mobileMenuClicked == true) {
-//         navigationPosition.style.top = '-100vh';
-//         navigationPosition.style.animation = ' .5s mobileMenuSlideClose forwards ease-in-out';
-//         mobileMenuClicked = false;
-//         console.log('closed mobile menu');
-//     }
-// };
+    else if(mobileMenuClicked == true) {
+        menuPosition.style.left = '-100%';
+        menuPosition.style.animation = '.5s mobileMenuSlideClose forwards ease-in-out';
+        mobileMenuClicked = false;
+    }
+};
+
+
+document.getElementById("social-media-button").onclick =  function() {
+    const panels = document.querySelectorAll('.panel');
+
+    panels.forEach(panel => {
+        if (panel.style.display === "flex") {
+            panel.style.display = "none";
+            document.getElementById('chevron-down').style.animation = "rotateIcon2 .5s forwards";
+            document.getElementById('social-media-button').style.color = "#ffffff";
+
+        } else {
+            panel.style.display = "flex";
+            document.getElementById('chevron-down').style.animation = "rotateIcon .5s forwards";
+            document.getElementById('social-media-button').style.color = "#ff8c00";
+        }
+    });
+};
 // Mobile menu - End
-
 
 
 // Contact form open/close - Start
