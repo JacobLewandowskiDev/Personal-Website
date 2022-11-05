@@ -1,6 +1,8 @@
 let path = window.location.pathname;
 let page = path.split("/").pop();
 
+
+// Type out my job title on the main index page
     var i = 0;
     var titleText = 'Full-Stack Software Developer';
     var speed = 200;
@@ -21,7 +23,7 @@ let page = path.split("/").pop();
         }
     };
 
-    if(page == "index.html" || page == "/") {
+    function typeOut() {
         setTimeout(() => {
             document.getElementById('full-stack-text').innerHTML = "";
             document.onload = typeWriter();
