@@ -1,6 +1,34 @@
 let path = window.location.pathname;
 let page = path.split("/").pop();
 
+    var i = 0;
+    var titleText = 'Full-Stack Software Developer';
+    var speed = 200;
+
+   function typeWriter() {
+    document.getElementById('full-stack-text').style.opacity = 1;
+        if (i < titleText.length) {
+            document.getElementById('full-stack-text').innerHTML += titleText.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+            if(i == titleText.length) {
+                var blinkingLine = document.createElement('span');
+                blinkingLine.innerHTML = '|';
+                blinkingLine.style.opacity = '1';
+                blinkingLine.style.animation = 'blink .8s infinite backwards';
+                document.getElementById('full-stack-text').appendChild(blinkingLine);
+            }
+        }
+    };
+
+    if(page == "index.html") {
+        setTimeout(() => {
+            document.getElementById('full-stack-text').innerHTML = "";
+            document.onload = typeWriter();
+        }, 3300);
+    }
+
+
 // Mobile menu - Start
 let mobileMenuClicked = false;
 let menuPosition = document.getElementById('mobile-menu');
