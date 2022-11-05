@@ -21,7 +21,7 @@ let page = path.split("/").pop();
         }
     };
 
-    if(page == "index.html") {
+    if(page == "index.html" || page == "/") {
         setTimeout(() => {
             document.getElementById('full-stack-text').innerHTML = "";
             document.onload = typeWriter();
