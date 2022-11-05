@@ -17,6 +17,7 @@ let page = path.split("/").pop();
                 var blinkingLine = document.createElement('span');
                 blinkingLine.innerHTML = '|';
                 blinkingLine.style.opacity = '1';
+                blinkingLine.style.color = '#ffffff';
                 blinkingLine.style.animation = 'blink .8s infinite backwards';
                 document.getElementById('full-stack-text').appendChild(blinkingLine);
             }
